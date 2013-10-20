@@ -10,7 +10,7 @@ PrimePal.prototype = {
 
     // function with for loop to initialize array
     listBuilder: function() {
-        var i =0,
+        var i = 0,
             j = this.size;
 
         for (; i < j; i += 1) {
