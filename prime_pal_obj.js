@@ -28,7 +28,7 @@ PrimePal.prototype = {
                 outeritem = this.dig[i],
                 outeritem_str = outeritem.toString();
 
-            for (var j = 2; j <= tovalue ; j += 1) {
+            for (var j = 2; j <= tovalue; j += 1) {
                 if (outeritem % j == 0) {
                     this.bigprime = 0;
                     break;
@@ -56,4 +56,4 @@ PrimePal.prototype = {
     primepal = new PrimePal(1000);
     var digits = primepal.listBuilder();
     primepal.findprimePal(digits);
-}()); 
+}());
