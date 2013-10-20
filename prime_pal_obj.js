@@ -1,11 +1,14 @@
-
+// constructor
 PrimePal = function(dsize) {
     this.size = dsize;
     this.dig = [];
     this.bigprime = 0;
 };
 
+// prototype functions
 PrimePal.prototype = {
+
+    // function with for loop to initialize array
     listBuilder: function() {
         var i =0,
             j = this.size;
@@ -18,8 +21,8 @@ PrimePal.prototype = {
         return this.dig;
     },
 
+    // function to find prime palindrome
     findprimePal: function () {
-
         for (var i = 0; i < this.size; i += 1) {
             var tovalue = this.dig[i] - 1,
                 outeritem = this.dig[i],
@@ -47,7 +50,7 @@ PrimePal.prototype = {
     }
 };
 
-
+// immediate function to remove from global scope
 (function () {
     var primepal = null;
     primepal = new PrimePal(1000);
