@@ -39,5 +39,4 @@ FirstNon.prototype = {
           console.log(t);
         }
     });
-
 }());
